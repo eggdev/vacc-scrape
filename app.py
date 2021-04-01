@@ -4,7 +4,7 @@ from calls import availability, send_slack_message
 
 def main():
     response = availability.run()
-    print(response)
+    send_slack_message.send_message(response)
 
 
 if __name__ == "__main__":
